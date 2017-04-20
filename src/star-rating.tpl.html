@@ -9,19 +9,9 @@
              ng-click="$ctrl.onStarClicked(star)"
              ng-mouseover="$ctrl.onStarHover(star)">
 
-            <i class="star-empty {{$ctrl.classEmpty}}" ng-if="!$ctrl.svgVisible()"></i>
-            <i class="star-half {{$ctrl.classHalf}}" ng-if="!$ctrl.svgVisible()"></i>
-            <i class="star-filled {{$ctrl.classFilled}}" ng-if="!$ctrl.svgVisible()"></i>
-
-            <svg class="star-empty {{$ctrl.classEmpty}}" ng-if="$ctrl.svgVisible()">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{$ctrl.pathEmpty}}"></use>
-            </svg>
-            <svg class="star-half {{$ctrl.classHalf}}" ng-if="$ctrl.svgVisible()">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{$ctrl.pathHalf}}"></use>
-            </svg>
-            <svg class="star-filled {{$ctrl.classFilled}}" ng-if="$ctrl.svgVisible()">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{$ctrl.pathFilled}}"></use>
-            </svg>
+            <i class="fa fa-star-o" ng-if="!$ctrl.svgVisible()"></i>
+            <i class="fa fa-star-half-o" ng-if="!$ctrl.svgVisible()"></i>
+            <i class="fa fa-star" ng-if="!$ctrl.svgVisible()"></i>
         </div>
     </div>
 
