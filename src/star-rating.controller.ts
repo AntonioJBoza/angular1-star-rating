@@ -12,11 +12,11 @@ import {
 
 export class StarRatingController implements ng.IComponentController, IStarRatingCompBindings {
 
-    static DefaultClassEmpty: string = "default-star-empty-icon";
+    static DefaultClassEmpty: string = "fa fa-star-o";
 
-    static DefaultClassHalf: string = "default-star-half-icon";
+    static DefaultClassHalf: string = "fa fa-star-half-o";
 
-    static DefaultClassFilled: string = "default-star-filled-icon";
+    static DefaultClassFilled: string = "fa fa-star";
 
     static DefaultNumOfStars: number = 5;
 
@@ -30,7 +30,7 @@ export class StarRatingController implements ng.IComponentController, IStarRatin
 
     static DefaultLabelHidden: boolean = false;
 
-    static DefaultStarType: starRatingStarTypes = "svg";
+    static DefaultStarType: starRatingStarTypes = "icon";
 
     static DefaultAssetsPath: string = "assets/images/";
 
